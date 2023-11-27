@@ -2860,8 +2860,6 @@ void Gui::drawEntityReport() {
 			static vector<int> visibleEnts;
 			static vector<bool> selectedItems;
 
-			const ImGuiKeyModFlags expected_key_mod_flags = ImGui::GetMergedKeyModFlags();
-
 			int footerHeight = ImGui::GetFrameHeightWithSpacing() * 5 + 16;
 			ImGui::BeginChild("entlist", ImVec2(0, -footerHeight));
 
@@ -2948,11 +2946,11 @@ void Gui::drawEntityReport() {
 					string cname = ent->keyvalues["classname"];
 
 					if (ImGui::Selectable((cname + "##ent" + to_string(i)).c_str(), selectedItems[i], ImGuiSelectableFlags_AllowDoubleClick)) {
-						if (expected_key_mod_flags & ImGuiKeyModFlags_Ctrl) {
+						if (ImGui::IsKeyChordPressed(ImGuiMod_Ctrl)) {
 							selectedItems[i] = !selectedItems[i];
 							lastSelect = i;
 						}
-						else if (expected_key_mod_flags & ImGuiKeyModFlags_Shift) {
+						else if (ImGui::IsKeyChordPressed(ImGuiMod_Shift)) {
 							if (lastSelect >= 0) {
 								int begin = i > lastSelect ? lastSelect : i;
 								int end = i > lastSelect ? i : lastSelect;

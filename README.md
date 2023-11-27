@@ -56,7 +56,7 @@ Run 'bspguy <command> help' to read about a specific command.
 1. Install CMake and Visual Studio.
     * Visual Studio: Make sure to checkmark "Desktop development with C++" if you're installing for the first time. 
 1. Download and extract [the source](https://github.com/wootguy/bspguy/archive/master.zip) somewhere
-1. Download [Dear ImGui](https://github.com/ocornut/imgui/releases/tag/v1.81) and extract into the `bspguy-master` folder. Rename to `imgui`.
+1. Download [Dear ImGui](https://github.com/ocornut/imgui/releases/tag/v1.90) and extract into the `bspguy-master` folder. Rename to `imgui`.
 1. Download [GLFW](https://www.glfw.org/) and extract into the `bspguy-master` folder. Rename to `glfw`.
 1. Download [GLEW](http://glew.sourceforge.net/) (choose the  `Binaries 		Windows 32-bit and 64-bit` link) and extract into the `bspguy-master` folder. Rename to `glew`.
 1. Open a command prompt in the `bspguy-master` folder and run these commands:
@@ -71,7 +71,7 @@ Run 'bspguy <command> help' to read about a specific command.
 1. Install Git, CMake, X11, GLFW, GLEW, and a compiler.
     * Debian: `sudo apt install build-essential git cmake libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libgl1-mesa-dev xorg-dev libglfw3-dev libglew-dev`
 1. Download the source: `git clone https://github.com/wootguy/bspguy.git`
-1. Download [Dear ImGui](https://github.com/ocornut/imgui/releases/tag/v1.81) and extract next to the `src` folder. Rename to `imgui`.
+1. Download [Dear ImGui](https://github.com/ocornut/imgui/releases/tag/v1.90) and extract next to the `src` folder. Rename to `imgui`.
 1. Open a terminal in the `bspguy` folder and run these commands:
     ```
     mkdir build; cd build
